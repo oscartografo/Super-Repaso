@@ -4,7 +4,7 @@ class RegistraUsuarioUseCase (
     private val registroRepository: RegistroRepository
 
 ) {
-    suspend fun  execute (registroUsuario: RegistroUsuario) : Boolean{
-        return registroRepository.registrarUsuario(registroUsuario)
-    }
+    suspend fun  execute (registroUsuario: RegistroUsuario) : Boolean =
+    registroRepository.registrarUsuario(registroUsuario)
+
 }
